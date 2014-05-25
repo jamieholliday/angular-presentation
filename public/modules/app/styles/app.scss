@@ -1,0 +1,39 @@
+// Main scss file inclue all other files here
+$grey: #333;
+
+body {
+	background: #f0f0f0;
+}
+
+.controls {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.controls-left,
+.controls-right {
+	content: '';
+	width: 0;
+	height: 0;
+	float: left;
+	cursor: pointer;
+}
+
+.controls-left {
+	border-right: 12px solid rgba(0,0,0,.3);
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+}
+
+.controls-right {
+	border-left: 12px solid rgba(0,0,0,.3);
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	margin-left: 20px;
+}
+
+.slide {
+	height: 100%;
+	padding: 50px;
+}
