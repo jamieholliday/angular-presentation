@@ -1,12 +1,4 @@
-# angular-seed — Seed project for starting angular apps
+#Angular presentation
 
-By default comes with 
-
-* Angular
-* Node
-* Express
-* Gulp
-* Karma
-* Jasmine
-* Protractor
+For front end sessions at Vaimo
 
