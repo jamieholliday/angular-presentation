@@ -1,7 +1,7 @@
-var presentationApp = angular.module('presentationApp', ['ui.router']);
+var presentationApp = angular.module('presentationApp', ['ui.router', 'hljs']);
 
 
-presentationApp.config(function($stateProvider, $urlRouterProvider) {
+presentationApp.config(function($stateProvider, $urlRouterProvider, hljsServiceProvider) {
 	$urlRouterProvider.otherwise('slides/1');
 
 	$stateProvider
@@ -10,4 +10,8 @@ presentationApp.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl: 'partials/slides.html',
 			controller: 'SlidesCtrl'
 		});
+
+	hljsServiceProvider.setOptions({
+		tabReplace: '    '
+	});
 });

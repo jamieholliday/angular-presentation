@@ -3,7 +3,9 @@
 		<div class="controls-left" ng-click="prev()" ng-class="showBack()"></div>
 		<div class="controls-right" ng-click="next()" ng-class="showForwards()"></div>
 	</div>
-	<div class="slide slide-{{$index+1}}" ng-repeat="slide in slides" ng-show="slide.visible">
-		<ng-include src="slide.template"></ng-include>
+	<div class="slide slide-{{$index+1}} {{slide.style}}" ng-repeat="slide in slides" ng-show="slide.visible">
+		<div class="slide-content {{slide.middle ? 'middle' : ''}} {{slide.center ? 'center' : ''}}">
+			<ng-include src="slide.template"></ng-include>
+		</div>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 'use strict';
 
-presentationApp.directive('jhSlidedeck', function($state, $window) {
+presentationApp.directive('jhSlidedeck', function($state, $window, $document) {
 	return {
 		restrict: 'EA',
 		replace: true,
@@ -31,6 +31,14 @@ presentationApp.directive('jhSlidedeck', function($state, $window) {
 					slide.visible = false;
 				});
 				scope.slides[scope.currentIndex - 1].visible = true;
+			});
+
+			$document.bind('keyup', function(evt) {
+				if(evt.keyCode === 39) {
+					scope.next();
+				} else if(evt.keyCode === 37) {
+					scope.prev();
+				}
 			});
 		},
 		templateUrl: 'partials/slideContainer.html'

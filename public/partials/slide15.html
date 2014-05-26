@@ -1,0 +1,43 @@
+<h1>Controllers</h1>
+<div hljs>
+	<div ng-controller="ContactController">
+	     Email: <input type="text" ng-model="newcontact"/>
+	    <button ng-click="add()">Add</button>
+	    <ul>
+	    <li ng-repeat="contact in contacts"> {{ contact }} </li>
+	    </ul>
+	</div>
+	<script type="text/javascript">
+	    function ContactController($scope) {
+	        $scope.contacts = [
+	        	"hi@email.com", 
+	        	"hello@email.com"
+	        ];
+	 
+	        $scope.add = function() {
+	        	$scope.contacts.push($scope.newcontact);
+	        	$scope.newcontact = "";
+	        }
+	    }
+	</script>
+</div>
+
+<div class="demo">
+	<div ng-controller="ContactController">
+	     Email: <input type="text" ng-model="newcontact"/>
+	    <button ng-click="add()">Add</button> 
+	    <ul>
+	        <li ng-repeat="contact in contacts"> {{ contact }} </li>
+	    </ul>
+	</div>
+	<script type="text/javascript">
+	    function ContactController($scope) {
+	        $scope.contacts = ["hi@email.com", "hello@email.com"];
+	 
+	        $scope.add = function() {
+	        	$scope.contacts.push($scope.newcontact);
+	        	$scope.newcontact = "";
+	        }
+	    }
+	</script>
+</div>
