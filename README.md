@@ -25,8 +25,7 @@ Alternatively if you are old school just edit the files normally and refresh the
 
 ### Editing slides
 
-Add new slides into the partials folder
-Update the controller in the slides module with the new slide details
+Add new slides into the partials folder. Update the controller in the slides module with the new slide details
 
 Options:
 
