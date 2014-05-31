@@ -87,8 +87,6 @@ presentationApp.controller('SlidesCtrl', function($scope, $state, $window) {
 		}
 	];
 
-	
-	//******* HACK! FIX *******//
 	jQuery(function($) {
 		$window = $(window);
 		var calulateHeight = function() {
