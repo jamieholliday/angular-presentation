@@ -10,16 +10,19 @@ Ensure you have node installed: http://nodejs.org/
 
 Install gulp globally:
 
-```npm install -g gulp```
+```npm install -g gulp
+```
 
 Run gulp:
 
-```gulp```
+```gulp
+```
 
 ## Deploy
 
 To run this presentation using node
 
-```node server.js```
+```node server.js
+```
 
 
