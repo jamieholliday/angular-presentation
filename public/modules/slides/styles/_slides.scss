@@ -6,6 +6,7 @@ $demo: #F8F8F9;
 body {
 	color: $darkBlue;
 	font-size: 24px;
+	font-family: 'Droid Serif', serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul{
@@ -22,6 +23,7 @@ h1 {
 	font-size: 2.8em;
 	color: $blue;
 	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
@@ -97,10 +99,6 @@ li {
 			top: -14px;
 		}
 	}
-
-.slide {
-	font-family: 'PT Sans', sans-serif;
-}
 
 .demo {
 	background: $demo;

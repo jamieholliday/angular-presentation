@@ -6,7 +6,7 @@ $grey: #333;
 }
 
 body {
-	background: #f0f0f0;
+	background: #e6eff1;
 }
 
 .controls {
@@ -50,6 +50,7 @@ body {
 .middle {
 	top:50%;
 	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
 .center {
