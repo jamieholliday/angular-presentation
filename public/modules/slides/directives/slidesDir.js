@@ -15,8 +15,10 @@ presentationApp.directive('jhSlidedeck', function($state, $window, $document) {
 			scope.next = function() {
 				if(scope.currentIndex < scope.slides.length) {
 					scope.currentIndex++;
+
 					//$window.location.href = '#/slides/'+ scope.currentIndex;
 					//history.pushState(null, null, '#/slides/'+ scope.currentIndex);
+
 				}
 			};
 
@@ -43,6 +45,7 @@ presentationApp.directive('jhSlidedeck', function($state, $window, $document) {
 			// 		scope.prev();
 			// 	}
 			// });
+
 		},
 		templateUrl: 'partials/slideContainer.html'
 	};
